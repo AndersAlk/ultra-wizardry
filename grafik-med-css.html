@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Grafik med HTML
+</title>
+<style>
+    body {
+        font-family: Segoe, verdana, arial, "sans-serif";
+        /*hugget fra CSS3 patterns*/
+        background:
+            linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+            linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+        background-color:#708090;
+        background-size: 64px 128px
+    }
+    div {
+        width: 300px;
+        height: 150px;
+    }
+    #round-corners {
+        background: #2b92d9;
+        border-radius: 55px;
+        /* x, y, blur, farve; */
+        box-shadow: 8px 8px 10px #ddd;
+    }
+    #gradient {
+        background: linear-gradient(red, yellow);
+    }
+    #rotate {
+        background: #a3fd93;
+        transform: rotate(20deg);
+        margin: 50px
+    }
+    #rotate:hover {
+        transform: rotate(90deg);
+        transition-duration: 2s;
+    }
+    
+    #transition {
+        background: #fdfd8d;
+        transition: width 0.2s;
+    }
+    #transition:hover {
+        width: 505px;
+        
+    }
+    #text-shadow {
+        text-shadow: 5px 5px 5px #ddd;
+        font-size: 50px;
+    }
+    #spalter  {
+        column-count: 3;
+    }
+</style>
+</head>
+<body>
+    <h1>Eksempler på CSS-grafik</h1>
+    <h2>Runde hjørner og skygger</h2>
+    <div id= "round-corners">
+        
+    </div>
+    <h2>Gradient</h2>
+    <div id="gradient"></div>
+    
+    <h2>Rotate</h2>
+    <div id="rotate"></div>
+    
+    <h2>Transition</h2>
+    <div id="transition"></div>
+    
+    <h1 id="text-shadow">Tekst med skygge</h1>
+    
+    <h2>Opdelt brødtekst i spalter</h2>
+    <p id="spalter">Lorem ipsum dolor sit amet, mea ea solum vitae definitiones. Nec hinc indoctum convenire cu. Ex cum summo appareat ocurreret, graeci deterruisset cu mea, no noluisse oportere imperdiet duo. In mazim dicit graece eos, ex persius indoctum complectitur pro, utinam pertinax voluptaria nam te. Cu esse magna delenit sea. Eam an melius petentium adipiscing, sumo aeterno pri ne.</p>
+</body>
+</html>
