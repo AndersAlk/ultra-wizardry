@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*css stylesheet*/
+
+/* Styles til desktop og store skærme */
+
+article {
+    width: 59%;
+}
+aside {
+    display: block;
+    width: 19%;
+}
+.banner {
+    width: 19%;
+}
+.logo {
+    width: 19%;
+}
+nav {
+    width: 79%;
+}
+
+/* Mini stylesheet inde i et stylesheet #styleception, også kaldet et "media query"*/
+@media screen and (min-width: 1212px) {
+    .container {
+        max-width: 1212px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* css Doc */
+/* browser reset "*" er tegnet for ALT i de nye HTML (IKKE de gamle)*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 8px 0.5%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logo, nav, aside, article, .banner, footer {
+    background-color: antiquewhite;
+    outline: 1.5px solid #ddd;
+    width: 99%;
+    /* kun procenter i bredden er acceptabelt! */
+    margin-bottom: 8px;
+    text-align: center;
+}
+.logo {
+    height: 60px;
+    background: #ff6b6b;
+}
+nav {
+    height: 60px;
+    background: #377079;
+}
+aside, footer {
+    display: none;
+}
+article {
+    height: 550px;
+    background: #f7fff7;
+}
+.banner {
+    height: 60px;
+    background: #ffe66d;
+}
